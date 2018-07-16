@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BAFF1AE20FD4477005D5475 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF1AC20FD4477005D5475 /* Result.storyboard */; };
 		7015531D20FD117600C675A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015531C20FD117600C675A8 /* AppDelegate.swift */; };
 		7015531F20FD117600C675A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015531E20FD117600C675A8 /* MainViewController.swift */; };
 		7015532220FD117600C675A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7015532020FD117600C675A8 /* Main.storyboard */; };
@@ -15,10 +16,10 @@
 		7015533420FD14A000C675A8 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015533320FD14A000C675A8 /* RecordViewController.swift */; };
 		7015533620FD14ED00C675A8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015533520FD14ED00C675A8 /* ResultViewController.swift */; };
 		7015533920FD180500C675A8 /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7015533720FD180500C675A8 /* Record.storyboard */; };
-		7015533C20FD18E000C675A8 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7015533A20FD18E000C675A8 /* Results.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BAFF1AD20FD4477005D5475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HotAudio/Storyboard/Base.lproj/Result.storyboard; sourceTree = "<group>"; };
 		7015531920FD117600C675A8 /* HotAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7015531C20FD117600C675A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7015531E20FD117600C675A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		7015533320FD14A000C675A8 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		7015533520FD14ED00C675A8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7015533820FD180500C675A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HotAudio/Storyboard/Base.lproj/Record.storyboard; sourceTree = "<group>"; };
-		7015533B20FD18E000C675A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HotAudio/Storyboard/HotAudio/Storyboard/Base.lproj/Results.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		7015532E20FD119300C675A8 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				7015533A20FD18E000C675A8 /* Results.storyboard */,
+				4BAFF1AC20FD4477005D5475 /* Result.storyboard */,
 				7015533720FD180500C675A8 /* Record.storyboard */,
 				7015532520FD117800C675A8 /* LaunchScreen.storyboard */,
 				7015532020FD117600C675A8 /* Main.storyboard */,
@@ -175,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7015532720FD117800C675A8 /* LaunchScreen.storyboard in Resources */,
-				7015533C20FD18E000C675A8 /* Results.storyboard in Resources */,
+				4BAFF1AE20FD4477005D5475 /* Result.storyboard in Resources */,
 				7015532420FD117800C675A8 /* Assets.xcassets in Resources */,
 				7015532220FD117600C675A8 /* Main.storyboard in Resources */,
 				7015533920FD180500C675A8 /* Record.storyboard in Resources */,
@@ -199,6 +199,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4BAFF1AC20FD4477005D5475 /* Result.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BAFF1AD20FD4477005D5475 /* Base */,
+			);
+			name = Result.storyboard;
+			sourceTree = "<group>";
+		};
 		7015532020FD117600C675A8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -221,14 +229,6 @@
 				7015533820FD180500C675A8 /* Base */,
 			);
 			name = Record.storyboard;
-			sourceTree = "<group>";
-		};
-		7015533A20FD18E000C675A8 /* Results.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7015533B20FD18E000C675A8 /* Base */,
-			);
-			name = Results.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

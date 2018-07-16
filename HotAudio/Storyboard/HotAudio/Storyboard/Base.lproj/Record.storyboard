@@ -20,21 +20,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kZH-lr-T1a"/>
                     </view>
-                    <connections>
-                        <segue destination="OLk-WK-TCq" kind="show" identifier="showResult" id="5ak-tJ-aAP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wi9-dD-sBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1326" y="30"/>
-        </scene>
-        <!--Results-->
-        <scene sceneID="H3D-1P-uzH">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Results" id="OLk-WK-TCq" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L0Q-on-Lh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2055" y="30"/>
         </scene>
     </scenes>
 </document>

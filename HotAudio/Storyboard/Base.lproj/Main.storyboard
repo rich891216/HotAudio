@@ -30,6 +30,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="mG1-Du-pcP" kind="show" identifier="showResult" id="BDV-NR-DPN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,6 +45,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62z-cE-yGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1326" y="30"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="edY-UT-Cid">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Result" id="mG1-Du-pcP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2z9-Ru-37W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.5999999999999" y="29.23538230884558"/>
         </scene>
     </scenes>
 </document>
