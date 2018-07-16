@@ -17,7 +17,6 @@ class ResultViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
     }
     
     override func didReceiveMemoryWarning() {

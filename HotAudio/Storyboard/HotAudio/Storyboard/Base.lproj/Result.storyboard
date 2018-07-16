@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JWY-CM-MFw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +15,7 @@
             <objects>
                 <viewController id="JWY-CM-MFw" customClass="ResultViewController" customModule="HotAudio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wbn-pX-XmV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="JBw-1U-d2Q">
@@ -55,8 +59,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Back to Home"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="JWY-CM-MFw" eventType="touchUpInside" id="N1C-Kf-hEv"/>
-                                            <segue destination="8cK-ud-H48" kind="unwind" identifier="backHome" unwindAction="unwindWithSegue:" id="kA0-LM-GxP"/>
+                                            <segue destination="8cK-ud-H48" kind="unwind" identifier="returnHome" unwindAction="unwindWithSegue:" id="lHK-L2-Tmn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -81,11 +84,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OzK-x8-G89"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QQg-zB-cB4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9L-h1-NAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8cK-ud-H48" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2053.5999999999999" y="29.23538230884558"/>
+            <point key="canvasLocation" x="2992.8000000000002" y="29.23538230884558"/>
         </scene>
     </scenes>
 </document>
