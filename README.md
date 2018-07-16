@@ -23,7 +23,8 @@ ResultViewController.swift
 Helpers:
 AudioAnalyzer.swift
 
-Day 1 - Finished Planning
-Day 2 - Started Coding
-Day 3 - Feature Complete
-Day 4 - Polish
+Monday - Finished Planning
+Tuesday - Started Coding
+Wednesday - Usable Build
+Thursday - Feature Complete
+Friday - Polish
