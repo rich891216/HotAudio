@@ -19,40 +19,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrt-LI-xzi">
-                                <rect key="frame" x="163" y="273" width="49" height="30"/>
+                                <rect key="frame" x="84" y="343" width="190" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Record"/>
+                                <state key="normal" title="Calculate my attractiveness"/>
                                 <connections>
-                                    <segue destination="umz-QF-Oah" kind="show" identifier="showRecording" id="6jW-bc-44V"/>
+                                    <segue destination="mG1-Du-pcP" kind="show" id="aJn-nJ-C8t"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <segue destination="mG1-Du-pcP" kind="show" identifier="showResult" id="BDV-NR-DPN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="31"/>
-        </scene>
-        <!--Record-->
-        <scene sceneID="iFP-oz-EC7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Record" id="umz-QF-Oah" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="62z-cE-yGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1326" y="30"/>
+            <point key="canvasLocation" x="565.60000000000002" y="30.134932533733135"/>
         </scene>
         <!--Result-->
         <scene sceneID="edY-UT-Cid">
             <objects>
-                <viewControllerPlaceholder storyboardName="Result" id="mG1-Du-pcP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2z9-Ru-37W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Result" id="mG1-Du-pcP" sceneMemberID="viewController"/>
             </objects>
-            <point key="canvasLocation" x="2053.5999999999999" y="29.23538230884558"/>
+            <point key="canvasLocation" x="1268" y="30"/>
         </scene>
     </scenes>
 </document>
