@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B9FBD7C20FD687A002A91C2 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FBD7B20FD687A002A91C2 /* Recording.swift */; };
 		4BAFF1AE20FD4477005D5475 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFF1AC20FD4477005D5475 /* Result.storyboard */; };
 		7015531D20FD117600C675A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015531C20FD117600C675A8 /* AppDelegate.swift */; };
 		7015531F20FD117600C675A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015531E20FD117600C675A8 /* MainViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B9FBD7B20FD687A002A91C2 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
 		4BAFF1AD20FD4477005D5475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HotAudio/Storyboard/Base.lproj/Result.storyboard; sourceTree = "<group>"; };
 		5926E46A365A9F6CE15A704B /* Pods-HotAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotAudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotAudio/Pods-HotAudio.debug.xcconfig"; sourceTree = "<group>"; };
 		59C855BC21AA56806014324A /* Pods-HotAudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotAudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotAudio/Pods-HotAudio.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B9FBD7A20FD6860002A91C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B9FBD7B20FD687A002A91C2 /* Recording.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7015531020FD117600C675A8 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		7015531B20FD117600C675A8 /* HotAudio */ = {
 			isa = PBXGroup;
 			children = (
+				4B9FBD7A20FD6860002A91C2 /* Models */,
 				7015533220FD123A00C675A8 /* SupportingFiles */,
 				7015533120FD11EB00C675A8 /* Views */,
 				7015533020FD11C600C675A8 /* Services */,
@@ -277,6 +288,7 @@
 				7015531F20FD117600C675A8 /* MainViewController.swift in Sources */,
 				7015531D20FD117600C675A8 /* AppDelegate.swift in Sources */,
 				7015533620FD14ED00C675A8 /* ResultViewController.swift in Sources */,
+				4B9FBD7C20FD687A002A91C2 /* Recording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

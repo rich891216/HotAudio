@@ -85,6 +85,10 @@
                         <viewLayoutGuide key="safeArea" id="OzK-x8-G89"/>
                     </view>
                     <navigationItem key="navigationItem" id="QQg-zB-cB4"/>
+                    <connections>
+                        <outlet property="percentageLabel" destination="SGs-bj-cCN" id="IKD-WD-jnH"/>
+                        <outlet property="resultDescription" destination="GD6-G6-QVv" id="1nq-cd-FLL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9L-h1-NAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8cK-ud-H48" userLabel="Exit" sceneMemberID="exit"/>

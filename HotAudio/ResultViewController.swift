@@ -11,6 +11,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
+    @IBOutlet weak var resultDescription: UILabel!
+    @IBOutlet weak var percentageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
