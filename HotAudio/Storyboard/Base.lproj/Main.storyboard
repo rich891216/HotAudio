@@ -18,22 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrt-LI-xzi">
-                                <rect key="frame" x="84" y="343" width="190" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6N-SC-PMm">
+                                <rect key="frame" x="65" y="65" width="244" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Calculate my attractiveness"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Mrt-LI-xzi">
+                                <rect key="frame" x="65" y="226" width="244" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86649072319557952" green="0.74326879524333511" blue="0.14537217881944445" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="Calculate my attractiveness">
+                                    <color key="titleColor" red="0.61360732163000575" green="0.1973746827411168" blue="0.1973746827411168" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="mG1-Du-pcP" kind="show" id="aJn-nJ-C8t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcz-T7-LxZ">
+                                <rect key="frame" x="209" y="126" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play_recording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNS-09-OqP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-jc-Jtm">
+                                <rect key="frame" x="65" y="126" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="start_recording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAp-QP-cAb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="play_btn_ref" destination="mcz-T7-LxZ" id="RDB-pi-CQs"/>
+                        <outlet property="record_btn_ref" destination="9Z9-jc-Jtm" id="kWM-tl-pmO"/>
+                        <outlet property="recordingTimeLabel" destination="A6N-SC-PMm" id="1dp-yx-W0h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565.60000000000002" y="30.134932533733135"/>
+            <point key="canvasLocation" x="309.60000000000002" y="-47.226386806596707"/>
         </scene>
         <!--Result-->
         <scene sceneID="edY-UT-Cid">
@@ -41,7 +75,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2z9-Ru-37W" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Result" id="mG1-Du-pcP" sceneMemberID="viewController"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="30"/>
+            <point key="canvasLocation" x="1306" y="19"/>
         </scene>
     </scenes>
 </document>

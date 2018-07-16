@@ -72,9 +72,9 @@
 		7015532E20FD119300C675A8 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				7015532020FD117600C675A8 /* Main.storyboard */,
 				4BAFF1AC20FD4477005D5475 /* Result.storyboard */,
 				7015532520FD117800C675A8 /* LaunchScreen.storyboard */,
-				7015532020FD117600C675A8 /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
