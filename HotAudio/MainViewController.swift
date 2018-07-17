@@ -24,6 +24,7 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
     
     var score:Double?
     var message:String?
+    var recording:Recording?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -223,14 +224,14 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
         var destination:ResultViewController?
         destination?=segue.destination as! ResultViewController
         destination?.delegate=self
-        transferResults()
         
     }
 }
 extension MainViewController:ResultViewControllerDelegate {
     
-    func transferResults() {
-        print("in delegate")
+    func transferResults()->Recording? {
+        print("returning recording")
+        return recording
     }
 }
 

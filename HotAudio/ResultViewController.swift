@@ -14,12 +14,16 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultDescription: UILabel!
     @IBOutlet weak var percentageLabel: UILabel!
     weak var delegate:ResultViewControllerDelegate?
+    var recording:Recording?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    
+    override func loadView() {
+        recording=delegate?.transferResults()
+        super.loadView()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
