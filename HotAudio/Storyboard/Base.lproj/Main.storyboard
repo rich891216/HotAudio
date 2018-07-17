@@ -33,9 +33,6 @@
                                 <state key="normal" title="Calculate my attractiveness">
                                     <color key="titleColor" red="0.61360732163000575" green="0.1973746827411168" blue="0.1973746827411168" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <segue destination="mG1-Du-pcP" kind="show" id="aJn-nJ-C8t"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcz-T7-LxZ">
                                 <rect key="frame" x="209" y="126" width="100" height="35"/>
@@ -53,6 +50,18 @@
                                 <state key="normal" title="Record"/>
                                 <connections>
                                     <action selector="start_recording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAp-QP-cAb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="u0X-IV-ejj">
+                                <rect key="frame" x="65" y="226" width="244" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86649072319999998" green="0.7432687952" blue="0.1453721788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="Calculate my attractiveness">
+                                    <color key="titleColor" red="0.61360732159999998" green="0.1973746827" blue="0.1973746827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mG1-Du-pcP" kind="show" id="IF1-D4-hOK"/>
                                 </connections>
                             </button>
                         </subviews>

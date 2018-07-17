@@ -13,13 +13,13 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var resultDescription: UILabel!
     @IBOutlet weak var percentageLabel: UILabel!
+    weak var delegate:ResultViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

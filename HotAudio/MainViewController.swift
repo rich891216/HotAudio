@@ -22,6 +22,9 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
     var isRecording = false
     var isPlaying = false
     
+    var score:Double?
+    var message:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         check_record_permission()
@@ -216,6 +219,19 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
         present(ac, animated: true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var destination:ResultViewController?
+        destination?=segue.destination as! ResultViewController
+        destination?.delegate=self
+        transferResults()
+        
+    }
+}
+extension MainViewController:ResultViewControllerDelegate {
+    
+    func transferResults() {
+        print("in delegate")
+    }
 }
 
 

@@ -9,5 +9,7 @@
 import Foundation
 import UIKit
 protocol ResultViewControllerDelegate:AnyObject {
-    func transferResults(percentage:Double,message:String)
+    var score:Double? { get set }
+    var message:String? { get set }
+    func transferResults()
 }
