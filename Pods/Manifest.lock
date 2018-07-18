@@ -1,4 +1,7 @@
 PODS:
+  - AudioKit (4.3):
+    - AudioKit/UI (= 4.3)
+  - AudioKit/UI (4.3)
   - Firebase/Auth (5.4.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.2)
@@ -46,6 +49,8 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
+  - AudioKit (~> 4.2)
+  - AudioKit/UI (~> 4.2)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -55,6 +60,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AudioKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -70,6 +76,7 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
+  AudioKit: 95bd2427c1afa7954d71b0c6195a09b87b7448bc
   Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseAuth: 096e457cdd4274412a66c4a35874787e411f5a03
@@ -84,6 +91,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: dc1fd71f0412dcbff46218a4598c92e33e33d93d
+PODFILE CHECKSUM: c630a094a8bae3111df448745e9c54acfca7de67
 
 COCOAPODS: 1.5.3

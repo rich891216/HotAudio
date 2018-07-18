@@ -12,4 +12,6 @@ target 'HotAudio' do
 	pod 'Firebase/Database'
 	pod 'Firebase/Storage'
 	pod 'Kingfisher','~> 4.0'
+	pod 'AudioKit', '~> 4.2'
+	pod 'AudioKit/UI', '~> 4.2'
 end
