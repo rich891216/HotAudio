@@ -19,7 +19,7 @@ class RecordingViewController: UIViewController {
     var mic: AKMicrophone!
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
-    static var frequencies = [Double]()
+    static var frequencies = [0.0]
     
     func setupPlot() {
         let plot = AKNodeOutputPlot(mic, frame: audioInputPlot.bounds)
@@ -61,6 +61,16 @@ class RecordingViewController: UIViewController {
             frequencyLabel.text = String(format: "%0.1f", tracker.frequency)
             RecordingViewController.frequencies.append(tracker.frequency)
         }
+    }
+    
+    static func average() -> Double {
+        var sum : Double = 0
+        var count = 0.0
+        for frequency in RecordingViewController.frequencies {
+            sum += frequency
+        }
+        count+=1
+        return sum/count
     }
     
     @IBAction func stopRecordingButtonTapped(_ sender: UIButton) {

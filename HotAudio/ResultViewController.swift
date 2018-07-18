@@ -15,6 +15,8 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var percentageLabel: UILabel!
     weak var delegate:ResultViewControllerDelegate?
     var recording:Recording?
+    var averageFrequency:Double?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +30,15 @@ class ResultViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(getAverage(_:)), name: Notification.Name(rawValue: "stopRecording"), object: nil)
+        
+    }
+    
+    @objc func getAverage(_ notification: NSNotification) {
+        averageFrequency = RecordingViewController.average()
     }
     
 }
