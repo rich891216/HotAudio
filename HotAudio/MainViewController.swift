@@ -31,6 +31,7 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
     override func viewDidLoad() {
         super.viewDidLoad()
         check_record_permission()
+        NotificationCenter.default.addObserver(self, selector: #selector(stopRecording(_:)), name: Notification.Name(rawValue: "stopRecording"), object: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -72,11 +73,7 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
         
         recordingVoice()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector: #selector(stopRecording(_:)), name: Notification.Name(rawValue: "stopRecording"), object: nil)
-    }
-    
+
     @IBAction func play_recording(_ sender: UIButton) {
         if(isPlaying)
         {
