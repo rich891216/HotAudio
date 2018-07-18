@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import NotificationCenter
+import Foundation
 
 class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
 
@@ -43,6 +45,10 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
     }
    
     @IBAction func start_recording(_ sender: UIButton) {
+        recordingVoice()
+    }
+    
+    func recordingVoice() {
         if(isRecording)
         {
             finishAudioRecording(success: true)
@@ -62,6 +68,14 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
         }
     }
     
+    @objc func stopRecording(_ notification: NSNotification) {
+        
+        recordingVoice()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(stopRecording(_:)), name: Notification.Name(rawValue: "stopRecording"), object: nil)
+    }
     
     @IBAction func play_recording(_ sender: UIButton) {
         if(isPlaying)

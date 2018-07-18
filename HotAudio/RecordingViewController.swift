@@ -9,6 +9,7 @@
 import AudioKit
 import AudioKitUI
 import UIKit
+import Foundation
 
 class RecordingViewController: UIViewController {
     
@@ -61,5 +62,18 @@ class RecordingViewController: UIViewController {
             RecordingViewController.frequencies.append(tracker.frequency)
         }
     }
+    
+    @IBAction func stopRecordingButtonTapped(_ sender: UIButton) {
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "stopRecording"), object: nil)
+        do {
+            try AudioKit.stop()
+        } catch {
+            print ("didn't stop")
+
+        }
+        print ("stopped")
+        
+    }
+    
 }
 
