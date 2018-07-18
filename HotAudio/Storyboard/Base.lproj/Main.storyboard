@@ -121,13 +121,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAJ-hl-erf">
-                                <rect key="frame" x="16" y="128" width="85.5" height="71.5"/>
+                                <rect key="frame" x="16" y="86" width="85.5" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-BB-ppF">
-                                <rect key="frame" x="348.5" y="86" width="10.5" height="113.5"/>
+                                <rect key="frame" x="348.5" y="128" width="10.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -139,7 +139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D05-Tc-nuU" customClass="EZAudioPlot" customModule="HotAudio" customModuleProvider="target">
-                                <rect key="frame" x="16" y="208" width="343" height="424"/>
+                                <rect key="frame" x="16" y="208" width="343" height="327"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="4Et-id-cWm"/>
@@ -148,11 +148,24 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Rek-x5-PGp"/>
                                         <exclude reference="4Et-id-cWm"/>
+                                        <exclude reference="Rek-x5-PGp"/>
                                     </mask>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n6-vW-dpR">
+                                <rect key="frame" x="124" y="593" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Main Page"/>
+                                <connections>
+                                    <segue destination="yYJ-qP-hPe" kind="unwind" identifier="backToMainStage" unwindAction="unwindWithSegue:" id="5wa-tu-hJg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bo-ii-kVa">
+                                <rect key="frame" x="134" y="555" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop Recording"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -180,9 +193,9 @@
                         <viewLayoutGuide key="safeArea" id="loB-81-NOd"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="3GB-oQ-Q9p"/>
-                                <exclude reference="m0y-XG-7Ij"/>
                                 <exclude reference="cwE-XW-RBu"/>
+                                <exclude reference="m0y-XG-7Ij"/>
+                                <exclude reference="3GB-oQ-Q9p"/>
                             </mask>
                         </variation>
                     </view>
@@ -192,8 +205,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q60-09-l0b" sceneMemberID="firstResponder"/>
+                <exit id="yYJ-qP-hPe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2561" y="-89"/>
+            <point key="canvasLocation" x="2560.8000000000002" y="-89.505247376311857"/>
         </scene>
     </scenes>
     <resources>
