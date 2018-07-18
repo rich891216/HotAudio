@@ -18,6 +18,7 @@ class RecordingViewController: UIViewController {
     var mic: AKMicrophone!
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
+    static var frequencies = [Double]()
     
     func setupPlot() {
         let plot = AKNodeOutputPlot(mic, frame: audioInputPlot.bounds)
@@ -57,6 +58,7 @@ class RecordingViewController: UIViewController {
     @objc func updateUI() {
         if tracker.amplitude > 0.1 {
             frequencyLabel.text = String(format: "%0.1f", tracker.frequency)
+            RecordingViewController.frequencies.append(tracker.frequency)
         }
     }
 }
