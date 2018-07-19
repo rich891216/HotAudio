@@ -49,13 +49,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="On3-eZ-crL">
                                 <rect key="frame" x="35" y="599" width="305" height="33"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VU-WP-w9u">
-                                        <rect key="frame" x="0.0" y="0.0" width="148" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Add to leaderboard"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVy-7V-3di">
-                                        <rect key="frame" x="178" y="0.0" width="127" height="33"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVy-7V-3di">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Back to Home"/>
                                         <connections>
@@ -65,11 +60,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="gVy-7V-3di" secondAttribute="bottom" id="O3u-gd-S9m"/>
-                                    <constraint firstItem="2VU-WP-w9u" firstAttribute="top" secondItem="On3-eZ-crL" secondAttribute="top" id="OQ2-zx-g88"/>
                                     <constraint firstItem="gVy-7V-3di" firstAttribute="top" secondItem="On3-eZ-crL" secondAttribute="top" id="eXl-Qb-RUs"/>
                                     <constraint firstAttribute="trailing" secondItem="gVy-7V-3di" secondAttribute="trailing" id="nAT-oy-CpH"/>
-                                    <constraint firstItem="2VU-WP-w9u" firstAttribute="leading" secondItem="On3-eZ-crL" secondAttribute="leading" id="uPV-GQ-Ztc"/>
-                                    <constraint firstAttribute="bottom" secondItem="2VU-WP-w9u" secondAttribute="bottom" id="z7Z-eg-XKM"/>
                                 </constraints>
                             </stackView>
                         </subviews>
