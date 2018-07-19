@@ -32,7 +32,7 @@ class RecordingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        RecordingViewController.frequencies = [0.0]
         AKSettings.audioInputEnabled = true
         mic = AKMicrophone()
         tracker = AKFrequencyTracker(mic)
@@ -65,10 +65,14 @@ class RecordingViewController: UIViewController {
     
     static func average() -> Double {
         var sum : Double = 0
+        var count : Double = 0
         for frequency in RecordingViewController.frequencies {
-            sum += frequency
+            if (frequency < 250) {
+                sum += frequency
+                count += 1
+            }
         }
-        return sum/frequencies.count
+        return sum/count
     }
     
     @IBAction func stopRecordingButtonTapped(_ sender: UIButton) {
