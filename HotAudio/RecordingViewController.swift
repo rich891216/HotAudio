@@ -57,9 +57,10 @@ class RecordingViewController: UIViewController {
     }
     
     @objc func updateUI() {
-        if tracker.amplitude > 0.1 {
+        if tracker.amplitude > 0.05 {
             frequencyLabel.text = String(format: "%0.1f", tracker.frequency)
             RecordingViewController.frequencies.append(tracker.frequency)
+            print(tracker.frequency)
         }
     }
     
@@ -68,8 +69,9 @@ class RecordingViewController: UIViewController {
         var count = 0.0
         for frequency in RecordingViewController.frequencies {
             sum += frequency
+            count+=1
         }
-        count+=1
+        print("\(sum) \(count)")
         return sum/count
     }
     

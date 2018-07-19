@@ -86,8 +86,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="QQg-zB-cB4"/>
                     <connections>
-                        <outlet property="percentageLabel" destination="SGs-bj-cCN" id="IKD-WD-jnH"/>
-                        <outlet property="resultDescription" destination="GD6-G6-QVv" id="1nq-cd-FLL"/>
+                        <outlet property="percentageLabel" destination="SGs-bj-cCN" id="0wc-B8-yPP"/>
+                        <outlet property="resultLabel" destination="GD6-G6-QVv" id="yUl-aT-rUF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9L-h1-NAS" userLabel="First Responder" sceneMemberID="firstResponder"/>

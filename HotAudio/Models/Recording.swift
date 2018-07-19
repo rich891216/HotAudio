@@ -8,19 +8,19 @@
 
 import Foundation
 class Recording {
-    var attractivePercentage : Int
-    init(attractivePercentage : Int) {
-        self.attractivePercentage = attractivePercentage
-    }
-    func calculateAttractiveness(hertz: Double) -> Int {
+
+    static func calculateAttractiveness(hertz: Double) -> Int {
+        var attractivePercentage:Int = 0
         if hertz == 96.00 {
             
             attractivePercentage = 100
-        }
-        if hertz > 96.00 {
+        } else if hertz > 180 {
+            attractivePercentage = 0
+        } else if hertz < 60 {
+            attractivePercentage = 0
+        } else if hertz > 96.00 {
             attractivePercentage = Int ((hertz - 96) / 84 * 100)
-        }
-        if hertz < 96.00 {
+        } else if hertz < 96.00 {
             attractivePercentage = Int ((96 - hertz) / 36 * 100)
         }
         return attractivePercentage
