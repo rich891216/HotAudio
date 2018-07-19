@@ -65,12 +65,10 @@ class RecordingViewController: UIViewController {
     
     static func average() -> Double {
         var sum : Double = 0
-        var count = 0.0
         for frequency in RecordingViewController.frequencies {
             sum += frequency
-            count+=1
         }
-        return sum/count
+        return sum/frequencies.count
     }
     
     @IBAction func stopRecordingButtonTapped(_ sender: UIButton) {
