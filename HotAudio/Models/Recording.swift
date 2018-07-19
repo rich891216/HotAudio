@@ -18,9 +18,9 @@ class Recording {
         } else if hertz < 60 {
             attractivePercentage = 0
         } else if hertz > 96.00 {
-            attractivePercentage = Int ((hertz - 96) / 84 * 100)
+            attractivePercentage = Int (100 - (hertz - 96) / 84 * 100)
         } else if hertz < 96.00 {
-            attractivePercentage = Int ((96 - hertz) / 36 * 100)
+            attractivePercentage = Int (100 - (96 - hertz) / 36 * 100)
         }
         return attractivePercentage
     }
