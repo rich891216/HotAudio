@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,43 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-07-19 at 3.15.25 PM" translatesAutoresizingMaskIntoConstraints="NO" id="nMf-8W-i3q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hot Audio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9S-4S-RmI">
+                                <rect key="frame" x="117.5" y="145" width="140" height="47"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A measure of BDE 😂😂😂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZ6-3D-8pk">
+                                <rect key="frame" x="71" y="342" width="232" height="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b9S-4S-RmI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="2AE-M0-7BY"/>
+                            <constraint firstItem="nMf-8W-i3q" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GHq-8v-ymj"/>
+                            <constraint firstItem="nMf-8W-i3q" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="X0o-rw-1R1"/>
+                            <constraint firstItem="nMf-8W-i3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZQ8-6V-TRA"/>
+                            <constraint firstItem="nMf-8W-i3q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cc5-ix-Qyd"/>
+                            <constraint firstItem="b9S-4S-RmI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fEC-8j-Nx5"/>
+                            <constraint firstItem="VZ6-3D-8pk" firstAttribute="top" secondItem="b9S-4S-RmI" secondAttribute="bottom" constant="150" id="pTO-Rq-VkV"/>
+                            <constraint firstItem="VZ6-3D-8pk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="q6x-bv-R2R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2018-07-19 at 3.15.25 PM" width="482" height="1074"/>
+    </resources>
 </document>
