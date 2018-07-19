@@ -60,7 +60,6 @@ class RecordingViewController: UIViewController {
         if tracker.amplitude > 0.075 {
             frequencyLabel.text = String(format: "%0.1f", tracker.frequency)
             RecordingViewController.frequencies.append(tracker.frequency)
-            print(tracker.frequency)
         }
     }
     
