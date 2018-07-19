@@ -12,7 +12,6 @@ class Recording {
     static func calculateAttractiveness(hertz: Double) -> Int {
         var attractivePercentage:Int = 0
         if hertz == 96.00 {
-            
             attractivePercentage = 100
         } else if hertz > 180 {
             attractivePercentage = 0
