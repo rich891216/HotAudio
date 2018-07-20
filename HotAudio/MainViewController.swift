@@ -28,6 +28,11 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
     var message:String?
     var recording:Recording?
     
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 2.5)
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         check_record_permission()
