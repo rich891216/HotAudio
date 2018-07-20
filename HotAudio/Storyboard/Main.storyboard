@@ -20,17 +20,17 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="u0X-IV-ejj">
                                 <rect key="frame" x="16" y="602" width="343" height="49"/>
-                                <color key="backgroundColor" red="0.86649072319999998" green="0.7432687952" blue="0.1453721788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                 <state key="normal" title="Calculate">
-                                    <color key="titleColor" red="0.61360732159999998" green="0.1973746827" blue="0.1973746827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="mG1-Du-pcP" kind="show" identifier="showResult" id="IF1-D4-hOK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-jc-Jtm">
-                                <rect key="frame" x="62.5" y="149" width="250" height="250"/>
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-jc-Jtm">
+                                <rect key="frame" x="62.5" y="199" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="dpP-FJ-ZvD"/>
                                     <constraint firstAttribute="width" constant="250" id="hro-KI-xxi"/>
@@ -42,32 +42,32 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6N-SC-PMm">
-                                <rect key="frame" x="0.0" y="70" width="375" height="29"/>
+                                <rect key="frame" x="0.0" y="95" width="375" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q9T-IX-9EG">
-                                <rect key="frame" x="90" y="534" width="195" height="29"/>
+                                <rect key="frame" x="90" y="529" width="195" height="29"/>
                                 <segments>
                                     <segment title="Constructive"/>
                                     <segment title="Destructive"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.97180910905202234" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q9T-IX-9EG" secondAttribute="trailing" constant="90" id="9tj-Jc-ton"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u0X-IV-ejj" secondAttribute="bottom" constant="16" id="Kom-TB-eab"/>
                             <constraint firstItem="A6N-SC-PMm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L1z-RU-OwW"/>
                             <constraint firstItem="9Z9-jc-Jtm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mdl-TY-riK"/>
-                            <constraint firstItem="u0X-IV-ejj" firstAttribute="top" secondItem="q9T-IX-9EG" secondAttribute="bottom" constant="40" id="Npa-qQ-5RE"/>
+                            <constraint firstItem="u0X-IV-ejj" firstAttribute="top" secondItem="q9T-IX-9EG" secondAttribute="bottom" constant="45" id="Npa-qQ-5RE"/>
                             <constraint firstItem="u0X-IV-ejj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eYc-Po-UwI"/>
                             <constraint firstItem="A6N-SC-PMm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fVw-uN-L5j"/>
                             <constraint firstItem="q9T-IX-9EG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="kjI-OH-A0S"/>
-                            <constraint firstItem="9Z9-jc-Jtm" firstAttribute="top" secondItem="A6N-SC-PMm" secondAttribute="bottom" constant="50" id="lkP-Lb-4bL"/>
+                            <constraint firstItem="9Z9-jc-Jtm" firstAttribute="top" secondItem="A6N-SC-PMm" secondAttribute="bottom" constant="75" id="lkP-Lb-4bL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u0X-IV-ejj" secondAttribute="trailing" constant="16" id="rhA-nT-MVe"/>
-                            <constraint firstItem="A6N-SC-PMm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="zHk-7m-FhH"/>
+                            <constraint firstItem="A6N-SC-PMm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="zHk-7m-FhH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -132,7 +132,6 @@
                             </label>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D05-Tc-nuU" customClass="EZAudioPlot" customModule="HotAudio" customModuleProvider="target">
                                 <rect key="frame" x="25" y="235" width="325" height="330"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="330" id="P3i-f9-2O6"/>
                                 </constraints>
@@ -186,7 +185,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="XDh-47-RkI" secondAttribute="bottom" constant="15" id="JYJ-Uz-TYU"/>
                                     <constraint firstItem="XDh-47-RkI" firstAttribute="top" secondItem="fQa-tb-7vk" secondAttribute="top" constant="15" id="VWa-cd-ytS"/>
@@ -204,7 +202,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.97180910909999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oN4-le-bUI" firstAttribute="top" secondItem="ToX-lg-WMF" secondAttribute="bottom" constant="8" id="0HX-wQ-IcS"/>
                             <constraint firstItem="Nbs-vg-o8h" firstAttribute="top" secondItem="5bo-ii-kVa" secondAttribute="bottom" constant="15" id="DDA-ix-ZOD"/>
