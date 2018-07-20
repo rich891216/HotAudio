@@ -11,5 +11,5 @@ import UIKit
 protocol ResultViewControllerDelegate:AnyObject {
     var score:Double? { get set }
     var message:String? { get set }
-    func transferResults()->Recording?
+    func transferResults()->Int
 }

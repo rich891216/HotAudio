@@ -26,7 +26,7 @@
                                     <color key="titleColor" red="0.61360732159999998" green="0.1973746827" blue="0.1973746827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mG1-Du-pcP" kind="show" id="IF1-D4-hOK"/>
+                                    <segue destination="mG1-Du-pcP" kind="show" identifier="showResult" id="IF1-D4-hOK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-jc-Jtm">
@@ -47,26 +47,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcz-T7-LxZ">
-                                <rect key="frame" x="0.0" y="449" width="375" height="42"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Play"/>
-                                <connections>
-                                    <action selector="play_recording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNS-09-OqP"/>
-                                </connections>
-                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="q9T-IX-9EG">
+                                <rect key="frame" x="90" y="534" width="195" height="29"/>
+                                <segments>
+                                    <segment title="Constructive"/>
+                                    <segment title="Destructive"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mcz-T7-LxZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0UM-V1-UNQ"/>
-                            <constraint firstItem="mcz-T7-LxZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AcW-v8-89C"/>
-                            <constraint firstItem="mcz-T7-LxZ" firstAttribute="top" secondItem="9Z9-jc-Jtm" secondAttribute="bottom" constant="50" id="Fsu-q7-Vhc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q9T-IX-9EG" secondAttribute="trailing" constant="90" id="9tj-Jc-ton"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u0X-IV-ejj" secondAttribute="bottom" constant="16" id="Kom-TB-eab"/>
                             <constraint firstItem="A6N-SC-PMm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L1z-RU-OwW"/>
                             <constraint firstItem="9Z9-jc-Jtm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mdl-TY-riK"/>
+                            <constraint firstItem="u0X-IV-ejj" firstAttribute="top" secondItem="q9T-IX-9EG" secondAttribute="bottom" constant="40" id="Npa-qQ-5RE"/>
                             <constraint firstItem="u0X-IV-ejj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eYc-Po-UwI"/>
                             <constraint firstItem="A6N-SC-PMm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fVw-uN-L5j"/>
+                            <constraint firstItem="q9T-IX-9EG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="kjI-OH-A0S"/>
                             <constraint firstItem="9Z9-jc-Jtm" firstAttribute="top" secondItem="A6N-SC-PMm" secondAttribute="bottom" constant="50" id="lkP-Lb-4bL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u0X-IV-ejj" secondAttribute="trailing" constant="16" id="rhA-nT-MVe"/>
                             <constraint firstItem="A6N-SC-PMm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="zHk-7m-FhH"/>
@@ -75,9 +73,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Wet-p7-7dI"/>
                     <connections>
-                        <outlet property="play_btn_ref" destination="mcz-T7-LxZ" id="RDB-pi-CQs"/>
                         <outlet property="record_btn_ref" destination="9Z9-jc-Jtm" id="kWM-tl-pmO"/>
                         <outlet property="recordingTimeLabel" destination="A6N-SC-PMm" id="1dp-yx-W0h"/>
+                        <outlet property="resultSegmentedControl" destination="q9T-IX-9EG" id="xCr-KT-RhV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

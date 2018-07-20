@@ -14,9 +14,10 @@ import Foundation
 class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
 
     @IBOutlet weak var recordingTimeLabel: UILabel!
-    @IBOutlet weak var play_btn_ref: UIButton!
+    //@IBOutlet weak var play_btn_ref: UIButton!
     @IBOutlet weak var record_btn_ref: UIButton!
     
+    @IBOutlet weak var resultSegmentedControl: UISegmentedControl!
     var audioRecorder: AVAudioRecorder!
     var audioPlayer : AVAudioPlayer!
     var meterTimer: Timer!
@@ -59,7 +60,7 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
         {
             finishAudioRecording(success: true)
             record_btn_ref.setTitle("Record", for: .normal)
-            play_btn_ref.isEnabled = true
+            //play_btn_ref.isEnabled = true
             isRecording = false
         }
         else
@@ -69,7 +70,7 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
             audioRecorder.record()
             meterTimer = Timer.scheduledTimer(timeInterval: 0.1, target:self, selector:#selector(self.updateAudioMeter(timer:)), userInfo:nil, repeats:true)
             record_btn_ref.setTitle("Stop", for: .normal)
-            play_btn_ref.isEnabled = false
+            //play_btn_ref.isEnabled = false
             isRecording = true
         }
     }
@@ -79,7 +80,7 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
         recordingVoice()
     }
 
-    @IBAction func play_recording(_ sender: UIButton) {
+    /*@IBAction func play_recording(_ sender: UIButton) {
         if(isPlaying)
         {
             audioPlayer.stop()
@@ -102,7 +103,7 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
                 display_alert(msg_title: "Error", msg_desc: "Audio file is missing.", action_title: "OK")
             }
         }
-    }
+    }*/
     
     func check_record_permission() {
         switch AVAudioSession.sharedInstance().recordPermission() {
@@ -217,7 +218,7 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
         {
             finishAudioRecording(success: false)
         }
-        play_btn_ref.isEnabled = true
+        //play_btn_ref.isEnabled = true
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool)
@@ -237,17 +238,21 @@ class MainViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecord
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var destination:ResultViewController?
-        destination?=segue.destination as! ResultViewController
-        destination?.delegate=self
+        super.prepare(for: segue, sender: sender)
+        if(segue.identifier=="showResult") {
+            var destination:ResultViewController
+            destination=segue.destination as! ResultViewController
+            destination.delegate=self
+            print("delegate set")
+        }
         
     }
 }
 extension MainViewController:ResultViewControllerDelegate {
     
-    func transferResults()->Recording? {
+    func transferResults()->Int {
         print("returning recording")
-        return recording
+        return resultSegmentedControl.selectedSegmentIndex
     }
 }
 
